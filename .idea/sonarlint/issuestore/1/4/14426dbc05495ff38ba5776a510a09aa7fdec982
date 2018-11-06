@@ -1,7 +1,3 @@
 
-vsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÃÂå8ÀãÓ¯é,
-wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¦ß–ä8ÀãÓ¯é,
-Psquid:S1481"-Remove this unused "rootView" local variable.(Æôå øÿÿÿÿ8ÀãÓ¯é,
-_squid:S1854"<Remove this useless assignment to local variable "rootView".(Æôå øÿÿÿÿ8ÀãÓ¯é,
-dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8ÀãÓ¯é,
-lsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(ÍïÓ‘8ÀãÓ¯é,
+jsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(ÍïÓ‘8¥˜èí,
+[squid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8¥˜èí,
