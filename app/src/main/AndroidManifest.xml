@@ -24,5 +24,5 @@
         <activity android:name=".ColorsActivity"
             android:label="Colors"></activity>
     </application>
-
+    <protected-broadcast android:name="com.motorola.motocare.INTENT_TRIGGER" />
 </manifest>
