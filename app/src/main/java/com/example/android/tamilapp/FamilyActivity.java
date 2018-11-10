@@ -28,7 +28,7 @@ public class FamilyActivity extends AppCompatActivity {
 
         // Create an instance for Custom Array Adapter(In this case WordAdapter)
         // (ArrayAdapter - adapter converts an ArrayList of objects into View items loaded into the ListView container)
-        WordAdapter itemsAdapter = new WordAdapter(this, relations);
+        WordAdapter itemsAdapter = new WordAdapter(this, relations, R.color.category_family);
 
         // Connect the adapter to a ListView
         ListView listView = (ListView) findViewById(R.id.list);
