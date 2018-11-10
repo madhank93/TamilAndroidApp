@@ -4,12 +4,18 @@ public class Word {
 
     private String mTamilTranslation;
     private String mDefaultTranslation;
-    private int mImageResourceID;
+    private int mImageResourceID = HAS_NO_IMAGE;
+    private static final int HAS_NO_IMAGE = -1;
 
     public Word (String mdefaultTranslation, String mtamilTranslation, int mImageResourceID) {
         this.mTamilTranslation = mtamilTranslation;
         this.mDefaultTranslation = mdefaultTranslation;
         this.mImageResourceID = mImageResourceID;
+    }
+
+    public Word (String mdefaultTranslation, String mtamilTranslation) {
+        this.mTamilTranslation = mtamilTranslation;
+        this.mDefaultTranslation = mdefaultTranslation;
     }
 
     /**
@@ -31,5 +37,9 @@ public class Word {
      */
     public int getImageResourceId() {
         return mImageResourceID;
+    }
+
+    public boolean hasImage(){
+        return mImageResourceID != HAS_NO_IMAGE;
     }
 }

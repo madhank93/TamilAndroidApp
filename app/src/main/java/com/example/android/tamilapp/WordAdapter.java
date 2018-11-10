@@ -26,18 +26,13 @@ public class WordAdapter extends ArrayAdapter<Word> {
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
+
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
         // Get the {@link Word} object located at this position in the list
         Word currentWord = getItem(position);
-
-        // Find the ImageView in the list_item.xml layout with the ID list_item_icon
-        ImageView imageIcon = listItemView.findViewById(R.id.list_item_icon);
-        // Get the image resource ID from the current Word object and
-        // set the image to iconView
-        imageIcon.setImageResource(currentWord.getImageResourceId());
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.tamil_text_view);
@@ -51,6 +46,18 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // set this text on the number TextView
         numberTextView.setText(currentWord.getDefaultTranslation());
 
+        // Find the ImageView in the list_item.xml layout with the ID list_item_icon
+        ImageView imageIcon = listItemView.findViewById(R.id.list_item_icon);
+
+        // From the currentWord object check if it has image.
+        // If it has image; set the image to iconView.
+        // Else hide the image view
+        if (currentWord.hasImage()) {
+            imageIcon.setImageResource(currentWord.getImageResourceId());
+        }
+        else {
+            imageIcon.setVisibility(View.GONE);
+        }
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
         return listItemView;
