@@ -17,12 +17,14 @@
         </activity>
         <activity android:name=".NumbersActivity"
             android:label="Numbers"/>
-        <activity android:name=".PhrasesActivity"
-            android:label="Phrases"/>
+        <activity android:name=".PoemActivity"
+            android:label="Poem"/>
         <activity android:name=".FamilyActivity"
             android:label="Family"/>
         <activity android:name=".ColorsActivity"
             android:label="Colors"></activity>
+        <activity android:name=".PhrasesActivity"
+            android:label="Phrases"></activity>
     </application>
     <protected-broadcast android:name="com.motorola.motocare.INTENT_TRIGGER" />
 </manifest>

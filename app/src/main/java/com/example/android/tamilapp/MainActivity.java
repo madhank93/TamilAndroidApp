@@ -56,17 +56,31 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the phrases category
+        TextView poem = (TextView) findViewById(R.id.poem);
+
+        // Set a click listener on that View
+        poem.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the phrases category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link PoemActivity}
+                Intent poemIntent = new Intent(MainActivity.this, PoemActivity.class);
+
+                // Start the new activity
+                startActivity(poemIntent);
+            }
+        });
+
+
+        // Find the View that shows the family category
         TextView phrases = (TextView) findViewById(R.id.phrases);
 
         // Set a click listener on that View
         phrases.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the phrases category is clicked on.
+            // The code in this method will be executed when the family View is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link PhrasesActivity}
                 Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
-
-                // Start the new activity
                 startActivity(phrasesIntent);
             }
         });
