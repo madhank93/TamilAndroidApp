@@ -1,0 +1,127 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1540115453000)
++++ .idea/misc.xml	(date 1540120017376)
+@@ -29,7 +29,7 @@
+       </value>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1540115453000)
++++ .idea/vcs.xml	(date 1540119909908)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- README.md	(date 1540116795901)
++++ README.md	(date 1540116795901)
+@@ -0,0 +1,3 @@
++# TamilAndroidApp
++
++Tami Android App ( Udacity Android Nano Degree - Exercise 004 )
+diff --git .idea/sonarlint/issuestore/1/4/14426dbc05495ff38ba5776a510a09aa7fdec982 .idea/sonarlint/issuestore/1/4/14426dbc05495ff38ba5776a510a09aa7fdec982
+deleted file mode 100644
+index d5cd77e59cf05209dafbdb5315be2f003b23b0ea..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/1/d/1d5a66f31b3a72004bf08ebe25979fc4346b4f65 .idea/sonarlint/issuestore/1/d/1d5a66f31b3a72004bf08ebe25979fc4346b4f65
+deleted file mode 100644
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/3/e/3e79e6d7f421c4f61b3666a368df7802b51eedb6 .idea/sonarlint/issuestore/3/e/3e79e6d7f421c4f61b3666a368df7802b51eedb6
+deleted file mode 100644
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/4/9/49845c622cb06d895975c7b1e3f943e320bce688 .idea/sonarlint/issuestore/4/9/49845c622cb06d895975c7b1e3f943e320bce688
+deleted file mode 100644
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/7/4/74cb3357a8dd57e423148827757b4504a62e8b5a .idea/sonarlint/issuestore/7/4/74cb3357a8dd57e423148827757b4504a62e8b5a
+deleted file mode 100644
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/7/6/76b07e40f24cce093536731477540f12e7da3cb6 .idea/sonarlint/issuestore/7/6/76b07e40f24cce093536731477540f12e7da3cb6
+deleted file mode 100644
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e .idea/sonarlint/issuestore/8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+deleted file mode 100644
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/9/6/96d57fdb8abe3ac69cb874176ce02852924940de .idea/sonarlint/issuestore/9/6/96d57fdb8abe3ac69cb874176ce02852924940de
+deleted file mode 100644
+index 88e674d73aee79dd7f335a0a82813aa01d0dc430..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/9/b/9b99e3a8520f4cc82c376fa81c9b5fca16c7a3cc .idea/sonarlint/issuestore/9/b/9b99e3a8520f4cc82c376fa81c9b5fca16c7a3cc
+deleted file mode 100644
+index 154239aeeb12527168530f96daccc573c87e77a3..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/a/8/a85a757f085448352100413c8cb4adf74a3d5944 .idea/sonarlint/issuestore/a/8/a85a757f085448352100413c8cb4adf74a3d5944
+deleted file mode 100644
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/d/d/dd3ec06c67c059896c52b621869738e07bb3a41e .idea/sonarlint/issuestore/d/d/dd3ec06c67c059896c52b621869738e07bb3a41e
+deleted file mode 100644
+index bae13f866f6a673ad0622e5a673d7c2669ade8ab..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git .idea/sonarlint/issuestore/index.pb .idea/sonarlint/issuestore/index.pb
+deleted file mode 100644
+index e962d6609869374d51977d37eba68714c2c803e4..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
