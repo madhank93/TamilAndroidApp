@@ -1,12 +1,17 @@
 package com.example.android.tamilapp;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class ColorsActivity extends AppCompatActivity {
+
+    MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,18 +19,18 @@ public class ColorsActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         // Create an Arraylist of colors (Data)
-        ArrayList<Word> colors = new ArrayList<>();
+        final ArrayList<Word> colors = new ArrayList<>();
 
-        colors.add(new Word("Red","சிவப்பு",R.drawable.red_color));
-        colors.add(new Word("Green","பச்சை",R.drawable.green_color));
-        colors.add(new Word("Blue","நீலம்",R.drawable.blue_color));
-        colors.add(new Word("Yellow","மஞ்சள்",R.drawable.yellow_color));
-        colors.add(new Word("White","வெள்ளை",R.drawable.white_color));
-        colors.add(new Word("Black","கருப்பு",R.drawable.black_color));
-        colors.add(new Word("Orange","ஆரஞ்சு(செம்மஞ்சள்)",R.drawable.orange_color));
-        colors.add(new Word("Brown","பழுப்பு",R.drawable.brown_color));
-        colors.add(new Word("Indigo","இண்டிகோ",R.drawable.indigo_color));
-        colors.add(new Word("Violet","ஊதா",R.drawable.violet_color));
+        colors.add(new Word("Red","சிவப்பு",R.drawable.red_color, R.raw.tamil_red));
+        colors.add(new Word("Green","பச்சை",R.drawable.green_color, R.raw.tamil_green));
+        colors.add(new Word("Blue","நீலம்",R.drawable.blue_color, R.raw.tamil_blue));
+        colors.add(new Word("Yellow","மஞ்சள்",R.drawable.yellow_color, R.raw.tamil_yellow));
+        colors.add(new Word("White","வெள்ளை",R.drawable.white_color, R.raw.tamil_white));
+        colors.add(new Word("Black","கருப்பு",R.drawable.black_color, R.raw.tamil_black));
+        colors.add(new Word("Orange","ஆரஞ்சு(செம்மஞ்சள்)",R.drawable.orange_color, R.raw.tamil_orange));
+        colors.add(new Word("Brown","பழுப்பு",R.drawable.brown_color, R.raw.tamil_brown));
+        colors.add(new Word("Indigo","இண்டிகோ",R.drawable.indigo_color, R.raw.tamil_indigo));
+        colors.add(new Word("Violet","ஊதா",R.drawable.violet_color, R.raw.tamil_violet));
 
         // Create an instance for Custom Array Adapter(In this case WordAdapter)
         // (ArrayAdapter - adapter converts an ArrayList of objects into View items loaded into the ListView container)
@@ -35,5 +40,15 @@ public class ColorsActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(itemsAdapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Word word = colors.get(position);
+
+                mediaPlayer = MediaPlayer.create(ColorsActivity.this, word.getmAudioResourceID());
+                mediaPlayer.start();
+            }
+        });
      }
 }
