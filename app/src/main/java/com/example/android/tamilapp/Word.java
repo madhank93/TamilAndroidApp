@@ -5,12 +5,21 @@ public class Word {
     private String mTamilTranslation;
     private String mDefaultTranslation;
     private int mImageResourceID = HAS_NO_IMAGE;
+    private int mAudioResourceID = HAS_NO_AUDIO;
     private static final int HAS_NO_IMAGE = -1;
+    private static final int HAS_NO_AUDIO = -1;
 
     public Word (String mdefaultTranslation, String mtamilTranslation, int mImageResourceID) {
         this.mTamilTranslation = mtamilTranslation;
         this.mDefaultTranslation = mdefaultTranslation;
         this.mImageResourceID = mImageResourceID;
+    }
+
+    public Word (String mdefaultTranslation, String mtamilTranslation, int mImageResourceID, int mAudioResourceID) {
+        this.mTamilTranslation = mtamilTranslation;
+        this.mDefaultTranslation = mdefaultTranslation;
+        this.mImageResourceID = mImageResourceID;
+        this.mAudioResourceID = mAudioResourceID;
     }
 
     public Word (String mdefaultTranslation, String mtamilTranslation) {
@@ -42,4 +51,13 @@ public class Word {
     public boolean hasImage(){
         return mImageResourceID != HAS_NO_IMAGE;
     }
+
+    public int getmAudioResourceID() {
+        return mAudioResourceID;
+    }
+
+    public boolean hasAudio() {
+        return mAudioResourceID != HAS_NO_AUDIO;
+    }
+
 }
