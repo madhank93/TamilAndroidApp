@@ -1,30 +1,20 @@
 package com.example.android.tamilapp;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.media.MediaPlayer;
+import android.media.AudioManager;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.List;
 
 public class WordAdapter extends ArrayAdapter<Word> {
 
-    private MediaPlayer mMediaPlayer;
-
     private int mColorResourceId;
-
 
     public WordAdapter(Activity context, ArrayList<Word> words, int mColorResourceId ) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
