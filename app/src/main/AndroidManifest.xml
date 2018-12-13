@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.tamilapp">
+    package="com.madhank93.android.tamilapp">
+
+    <protected-broadcast android:name="com.motorola.motocare.INTENT_TRIGGER" />
 
     <application
         android:allowBackup="true"
@@ -9,22 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">ss
+        <activity android:name="com.madhank93.android.tamilapp.MainActivity">
+            ss
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NumbersActivity"
-            android:label="Numbers"/>
-        <activity android:name=".PoemActivity"
-            android:label="Poem"/>
-        <activity android:name=".FamilyActivity"
-            android:label="Family"/>
-        <activity android:name=".ColorsActivity"
-            android:label="Colors"></activity>
-        <activity android:name=".PhrasesActivity"
-            android:label="Phrases"></activity>
+        <activity
+            android:name="com.madhank93.android.tamilapp.NumbersActivity"
+            android:label="Numbers" />
+        <activity
+            android:name="com.madhank93.android.tamilapp.PoemActivity"
+            android:label="Poem" />
+        <activity
+            android:name="com.madhank93.android.tamilapp.FamilyActivity"
+            android:label="Family" />
+        <activity
+            android:name="com.madhank93.android.tamilapp.ColorsActivity"
+            android:label="Colors" />
+        <activity
+            android:name="com.madhank93.android.tamilapp.PhrasesActivity"
+            android:label="Phrases" />
+        <activity android:name="com.madhank93.android.tamilapp.SimpleFragmentPagerAdapter"></activity>
     </application>
-    <protected-broadcast android:name="com.motorola.motocare.INTENT_TRIGGER" />
+
 </manifest>
