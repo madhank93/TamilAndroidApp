@@ -1,17 +1,22 @@
-package com.example.android.tamilapp;
+package com.madhank93.android.tamilapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class PoemActivity extends AppCompatActivity {
+
+public class PoemFragment extends Fragment {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.word_list);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         ArrayList<Word> poem = new ArrayList<>();
 
@@ -31,11 +36,17 @@ public class PoemActivity extends AppCompatActivity {
 
         // Create an instance for Custom Array Adapter(In this case WordAdapter)
         // (ArrayAdapter - adapter converts an ArrayList of objects into View items loaded into the ListView container)
-        WordAdapter itemsAdapter = new WordAdapter(this, poem, R.color.category_poem);
+        WordAdapter itemsAdapter = new WordAdapter(getActivity(), poem, R.color.category_poem);
 
         // Connect the adapter to a ListView
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemsAdapter);
 
+        return  rootView;
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
     }
 }

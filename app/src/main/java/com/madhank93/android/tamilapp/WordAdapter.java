@@ -1,7 +1,6 @@
-package com.example.android.tamilapp;
+package com.madhank93.android.tamilapp;
 
 import android.app.Activity;
-import android.media.AudioManager;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;

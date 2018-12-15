@@ -1,4 +1,4 @@
-package com.example.android.tamilapp;
+package com.madhank93.android.tamilapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
